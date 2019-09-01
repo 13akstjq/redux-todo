@@ -1,10 +1,14 @@
+/*
+type을 정의하고 todoAction의 type을 정의하는 곳  
+*/
+
 export const ADD_TODO = "ADD_TODO";
 export const TOGGLE_TODO = "TOGGLE_TODO";
 export const DELETE_TODO = "DELETE_TODO";
 
 export interface Todo {
   index: number;
-  todo: string;
+  text: string;
   isCompleted: boolean;
 }
 

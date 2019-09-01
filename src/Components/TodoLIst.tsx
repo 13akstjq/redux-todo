@@ -21,9 +21,7 @@ const TodoList: FunctionComponent = () => {
     <Wrapper>
       {todos.map(todo => (
         <Todo key={todo.index}>
-          <Text isCompleted={todo.isCompleted}>
-            {todo.index + 1}. {todo.todo}
-          </Text>
+          <Text isCompleted={todo.isCompleted}>{todo.text}</Text>
           <button
             onClick={() => dispatch({ type: TOGGLE_TODO, index: todo.index })}
           >
