@@ -4,6 +4,9 @@
     "module": "es6",
     "target": "es5",
     "jsx": "react",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "moduleResolution": "node",
     "allowJs": true,
     "allowSyntheticDefaultImports": true
   }

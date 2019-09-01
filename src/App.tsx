@@ -1,7 +1,13 @@
 import React from "react";
-
-const add = (a: number, b: number) => a + b;
-
+import { Header } from "./Components/Header";
+import TodoInput from "./Components/TodoInput";
+import TodoList from "./Components/TodoLIst";
 export default () => {
-  return <div>typescript Test122</div>;
+  return (
+    <div>
+      <Header text="Header" />
+      <TodoInput></TodoInput>
+      <TodoList></TodoList>
+    </div>
+  );
 };
